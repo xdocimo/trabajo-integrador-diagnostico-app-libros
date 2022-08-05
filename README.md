@@ -15,6 +15,11 @@ Borrado (para borrar libros por ID) (delete.js) ✔️
 Búsqueda por parámetros (busca un libro con 1 solo parámetro, buscará en los fields de titulo, autor y género) ✔️
 Ordenar por precios y año de lanzamiento de forma ascendentente ✔️
 
+
 💡 COMING SOON(?)💡
 
 Podriamos agregar un sistema de ratings y calificaciones a la base de datos.
+
+⚠️ KNOWN ISSUES(?⚠️
+
+Aparentemente al usar new.js, el año de lanzamiento, costo y precio se pushean como string y no como número.
