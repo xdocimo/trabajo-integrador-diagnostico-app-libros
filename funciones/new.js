@@ -3,41 +3,37 @@ const fs = require("fs")
 function newI(title,author,genre,year,cost,price) {
 console.log("Campos introducidos:" + "" + title,author,genre,year,cost,price)
 let data = fs.readFileSync("./db.json", "utf-8")
+
 var actionlog = fs.readFileSync("./log.txt", "utf-8");
 let datafinal = JSON.parse(data)
 var id = datafinal.length
+
+let avaibleids = fs.readFileSync("./avaibleids.json", "utf-8")
+let test = JSON.parse(avaibleids)
+
+
+// Se fija si hay algo en avaibleids.json que pueda usar como futura ID en vez de crear una propiamente.
+if(test.length > 0) {
+var id = test[0]
+console.log("Using an existent ID"+ " " + id)
+test.splice(0, 1)
+}
+
 
 // Strings por teclado a Integer Numbers //
 var year = parseFloat(year)
 var cost = parseFloat(cost)
 var price = parseFloat(price)
+var id = parseFloat(id)
 
-// Revisa si una ID ha sido borrada para suplantarla en vez de crear una nueva. (Función delete solo cambia el field de ID por "Avaible" en vez de usar un slice convencional, de esta forma
-// El programa puede saber si hay una disponibilidad sin ninguna complicación.
-// Francamente optimizable. // 
+datafinal.push({id, title, author, genre, year, cost, price})
 
-var flag = false
-
-for (let i = 0; i < datafinal.length; i++) {
-    if(datafinal[i].id == "Avaible") {
-        datafinal[i].id = i
-        datafinal[i].title = title
-        datafinal[i].author = author
-        datafinal[i].genre = genre
-        datafinal[i].year = year
-        datafinal[i].cost = cost
-        datafinal[i].price = price
-        var flag = true
-    }
-}
-if(flag == false) {
-    datafinal.push({id, title, author, genre, year, cost, price})
-}
-
+let guardadoid = JSON.stringify(test)
 let dataparaguardar = JSON.stringify(datafinal)
 fs.writeFileSync("./db.json", dataparaguardar)
 var actionlog = actionlog + "" + "Creado libro " + title + id + " | Autor: " + author + " | Genero: " + genre
 fs.writeFileSync("./log.txt", actionlog)
+fs.writeFileSync("./avaibleids.json", guardadoid)
 
 var warnings = ""
 

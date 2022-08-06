@@ -36,15 +36,6 @@
         "price": 10500
     },
     {
-        "id": 4,
-        "title": "Moby-Dick",
-        "author": "Herman Melville",
-        "genre": "Sea",
-        "year": 1851,
-        "cost": 600,
-        "price": 7160
-    },
-    {
         "id": 5,
         "title": "Heidi",
         "author": "Johanna Spyri",
@@ -61,5 +52,14 @@
         "year": "1813",
         "cost": "950",
         "price": "1500"
+    },
+    {
+        "id": 7,
+        "title": "Test",
+        "author": "Test",
+        "genre": "Drama",
+        "year": 1999,
+        "cost": 2000,
+        "price": 20000
     }
 ]
