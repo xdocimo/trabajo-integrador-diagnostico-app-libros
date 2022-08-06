@@ -1,4 +1,10 @@
-# trabajo integrador diagnostico app libros
+#trabajo integrador diagnostico app libros
+
+COMMIT 6/8/22 | 20:32
+En este commit, se soluciona definitivamente y de forma más limpia el problema de las IDS UNICAS. Se comienza a utilizar avaibleids.json, JSON en donde se registrará todas las ids que sean borradas desde delete.js y al usar NEW.JS primero se fijará si hay alguna avaibleid para usar en vez de usar el length del archivo, en caso de que sí, usará esa y la borrará de avaibleids.json. 
+
+Reemplaza la anterior solución que era (básicamente) hacer que el delete actue como edit y en vez de usar un splice() modificaba los parametros a "Avaible" para que el new iterara en búsqueda de estos parámetros en vez de crear uno.
+
 
 COMMIT 6/8/22 | 04:03
 
