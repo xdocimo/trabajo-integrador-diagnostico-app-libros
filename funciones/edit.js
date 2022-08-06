@@ -3,6 +3,7 @@ const fs = require("fs");
 
 function edit(id, opcion, nuevovalor) {
 let data = fs.readFileSync("./db.json", "utf-8");
+var actionlog = fs.readFileSync("./log.txt", "utf-8");
 let datafinish = JSON.parse(data);
 
 for (let i = 0; i < datafinish.length; i++) {
@@ -29,9 +30,10 @@ default:
 }
 }
 
-
+var actionlog = actionlog + "" + "Editado libro: ID " + id + " | Operacion: " + opcion + " | Nuevo valor: " + nuevovalor
+fs.writeFileSync("./log.txt", actionlog)
 let dataparaguardar = JSON.stringify(datafinish)
-fs.writeFileSync("../db.json", dataparaguardar)
+fs.writeFileSync("./db.json", dataparaguardar)
 return flag
 }
 

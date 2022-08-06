@@ -5,6 +5,7 @@ const deletex = require("./funciones/delete.js")
 const newI = require("./funciones/new.js")
 const browse = require("./funciones/browse.js")
 const sort = require("./funciones/sort.js")
+const list = require("./funciones/list.js")
 // ########################
 
 const opcion = process.argv[2]
@@ -32,7 +33,11 @@ break;
     case "sort":
     let returnedsort = (sort(process.argv[3])) 
     console.log(returnedsort)
+    break;
+    case "list":
+    let returnedlist = (list()) 
+    console.log(returnedlist)
 break;
     default: 
-    console.log("Opciones disponibles: read, edit, delete, new, browse")
+    console.log("Opciones disponibles: list, read, edit, delete, new, browse")
 }

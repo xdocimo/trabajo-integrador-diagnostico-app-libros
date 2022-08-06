@@ -1,1 +1,65 @@
-[{"id":"0","title":"El Alquimista","author":"Pablo Coelho","genre":"Drama","year":1988,"cost":100,"price":700},{"id":1,"title":"El gran Gatsby","author":"F. Scott Fitzgerald","genre":"Policial","year":2012,"cost":100,"price":7160},{"id":2,"title":"Las aventuras de Alicia en el país de las maravillas","author":"Lewis Carroll","genre":"Novela","year":2011,"cost":100,"price":970},{"id":3,"title":"El hobbit","author":"J. R. R. Tolkien","genre":"Ficcion","year":2007,"cost":150,"price":10500},{"id":4,"title":"Moby-Dick","author":"Herman Melville","genre":"Sea","year":1851,"cost":600,"price":7160},{"id":5,"title":"Heidi","author":"Johanna Spyri","genre":"Infantil","year":1880,"cost":950,"price":12850},{"id":6,"title":"Orgullo y Prejuicio","author":"Jane Austen","genre":"Novela","year":"1813","cost":"950","price":"1500"}]
+[
+    {
+        "id": "0",
+        "title": "El Alquimista",
+        "author": "Pablo Coelho",
+        "genre": "Drama",
+        "year": 1988,
+        "cost": 100,
+        "price": 700
+    },
+    {
+        "id": 1,
+        "title": "El gran Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": "Policial",
+        "year": 2012,
+        "cost": 100,
+        "price": 7160
+    },
+    {
+        "id": 2,
+        "title": "Las aventuras de Alicia en el país de las maravillas",
+        "author": "Lewis Carroll",
+        "genre": "Novela",
+        "year": 2011,
+        "cost": 100,
+        "price": 970
+    },
+    {
+        "id": 3,
+        "title": "El hobbit",
+        "author": "J. R. R. Tolkien",
+        "genre": "Ficcion",
+        "year": 2007,
+        "cost": 150,
+        "price": 10500
+    },
+    {
+        "id": 4,
+        "title": "Moby-Dick",
+        "author": "Herman Melville",
+        "genre": "Sea",
+        "year": 1851,
+        "cost": 600,
+        "price": 7160
+    },
+    {
+        "id": 5,
+        "title": "Heidi",
+        "author": "Johanna Spyri",
+        "genre": "Infantil",
+        "year": 1880,
+        "cost": 950,
+        "price": 12850
+    },
+    {
+        "id": 6,
+        "title": "Orgullo y Prejuicio",
+        "author": "Jane Austen",
+        "genre": "Novela",
+        "year": "1813",
+        "cost": "950",
+        "price": "1500"
+    }
+]
