@@ -3,7 +3,7 @@
 COMMIT 6/8/22 | 04:03
 Se agregó función list.js para ver nomá loss titulos, id y autores de todos los libros de la db en vez de todo el array como en read.js
 
-Se añadó sistema de log (registra cambios en la db en un .txt)
+Se añadió sistema de log (registra cambios en la db en un .txt)
 
 Se modificó el delete, ahora en vez de borrar con split modifica los parametros para dejar la ID "disponible"
 
