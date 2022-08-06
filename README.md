@@ -12,7 +12,7 @@ New.js ahora cerciora de transformar los strings introducidos por teclado con va
 
 Se modifica el new.js, ahora realoja nuevos libros en IDS que fueron borradas haciendo uso de un forloop que revisa si alguna ID está libre.
 
-Se intenta introducir, sin éxito, un sistema de advertencias para quien introduzca texto en vez de números en fields price, year y cost.
+Se intenta introducir, sin éxito, un sistema de advertencias para quien introduzca texto en vez de números en fields price, year y cost. (NEW.JS) (PENDIENTE)
 
 
  
