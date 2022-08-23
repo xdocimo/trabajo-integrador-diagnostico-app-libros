@@ -1,7 +1,7 @@
 const fs = require("fs")
 
 function browse(param) {
-    let xd = fs.readFileSync("./db.json", "utf-8")
+    let xd = fs.readFileSync("./db.json", "utf-8") // Acostumbrarse a colocar buenos nombres de variables y en camelCase
     let datafinish = JSON.parse(xd);
     var finded = []
     for (let i = 0; i < datafinish.length; i++) {
