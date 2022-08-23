@@ -7,7 +7,7 @@ let avaibleids = fs.readFileSync("./avaibleids.json", "utf-8");
 var actionlog = fs.readFileSync("./log.txt", "utf-8");
 let datafinal = JSON.parse(data);
 let datafinalid = JSON.parse(avaibleids);
-var flag = "No se ha encontrado esa busqueda"
+var flag = "No se ha encontrado esa busqueda" // ??
 
 for (let i = 0; i < datafinal.length; i++) {
     if(id == datafinal[i].id) {

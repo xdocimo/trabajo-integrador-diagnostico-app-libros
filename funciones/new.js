@@ -28,6 +28,11 @@ var id = parseFloat(id)
 
 datafinal.push({id, title, author, genre, year, cost, price})
 
+// camelCase !!!
+// ex: guardadoId
+// dataParaGuardar
+// 
+// Y escribí todo en inglés o español los nombres de la variables
 let guardadoid = JSON.stringify(test)
 let dataparaguardar = JSON.stringify(datafinal)
 fs.writeFileSync("./db.json", dataparaguardar)

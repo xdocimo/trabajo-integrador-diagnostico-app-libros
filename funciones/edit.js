@@ -10,6 +10,7 @@ for (let i = 0; i < datafinish.length; i++) {
     if(id == datafinish[i].id) {
 var flag = "Editado con éxito"
 switch (opcion) {
+    // Esto está mal, tiene que editarse todo los campos al mismo tiempo, no uno solo
     case "title":
     datafinish[i].title = nuevovalor
 break;
